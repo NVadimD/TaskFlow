@@ -144,7 +144,7 @@ body {
 
 
 
-.shouldDo__list .li::before {
+.shouldDo__list li::before {
     content: '';
     display: inline-block;
     width: 15px;
@@ -156,22 +156,22 @@ body {
     top: 7px;
 }
 
-.shouldDo__list .li:hover::before {
+.shouldDo__list li:hover::before {
     background-image: url('./img/cekedIcon.png');
     background-size: cover;
     cursor: pointer;
     color: #101116;
 }
-.shouldDo__list .li:hover {
+.shouldDo__list li:hover {
     cursor: pointer;
     font-weight: 500;
     color: #101116;
 }
 
-.shouldDo__list .li:active::before {
+.shouldDo__list li:active::before {
     opacity: 0.7;
 }
-.shouldDo__list .li:active {
+.shouldDo__list li:active {
     opacity: 0.7;
 }
 
