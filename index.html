@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskFlow</title>
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/svg">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
@@ -15,7 +16,12 @@
         </header>
         <main class="main">
             <div class="block block_shouldDo">
-                <h2 class="subTitle shouldDo__subTitle">What i should do?</h2>
+                <h2 class="subtitle shouldDo__subtitle">What I should do?</h2>
+                <div class="addTaskDesk">
+                    <h2 class="subtitle newTask__subtitle">Add new task</h2>
+                    <input class="textInput" type="text" placeholder="Text of task">
+                    <button class="btn">ADD</button>
+                </div>
                 <div class="taskBox shouldDo__taskBox">
                     <ul class="taskBox__list shouldDo__list">
                         <li class="li">Купить кота</li>
@@ -27,7 +33,7 @@
                 </div>
             </div>
             <div class="block block_haveDone">
-                <h2 class="subTitle haveDone__subTitle">Great, I have done it!</h2>
+                <h2 class="subtitle haveDone__subtitle">Great, I have done it!</h2>
                 <div class="taskBox haveDone__taskBox">
                     <ul class="taskBox__list haveDone__list">
                         <li class="li">Купить пса</li>

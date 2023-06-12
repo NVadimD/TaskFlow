@@ -39,33 +39,205 @@ body {
 
     display: flex;
 }
-
-.block {
-    min-height: 100%;
-    width: 50%;
-}
-
-.block_shouldDo {
-    background: #BBBDCE;
-}
-
-.subTitle {
+.subtitle {
     text-align: center;
     font-size: 32px;
     font-weight: 500;
     margin-top: 40px;
 }
 
-.block_haveDone {
+
+/* ---------------------------------------------Task Desk------------------------------------------------- */
+.addTaskDesk {
+    margin: 20px auto 0;
+    width: 90%;
+    min-height: 14%;
+    background: #98bbc4;
+    border-radius: 12px;
+}
+
+.newTask__subtitle {
+    font-size: 20px;
+    text-align: start;
+    padding: 10px 20px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.textInput {
+    margin: 0px 20px;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 14px;
+    color: #1A223F;
+    width: 70%;
+    background: #D7DEE9;
+    margin-bottom: 40px;
+}
+
+.textInput:focus {
+    outline: 1px solid #28304b;
+    box-shadow: 5px 5px 35px #9fa8ca;
+}
+
+.btn {
+    color: #1A223F;
+    border: 2px solid #1A223F;
+    border-radius: 10px;
+    padding: 0px 20px;
     background: #D7DEE9;
 }
-
-
-
-.taskBox {
-    margin: 28px;
-    padding: 0 10px;
+.btn:hover {
+    background: #1A223F;
+    color: #D7DEE9;
+    opacity: 0.9;
 }
-.taskBox li {
+.btn:active {
+    opacity: 0.7;
+}
+
+
+
+
+
+/* ---------------------------------------------SouldDo-HaveDone------------------------------------------------- */
+
+
+.block {
+    min-height: 100%;
+}
+
+
+.block_shouldDo {
+    width: 66%;
+}
+.block_haveDone{
+    width: 34%;
+}
+
+
+.block_shouldDo {
+    background: #D7DEE9;
+}
+.block_haveDone {
+    background: #BBBDCE;
+}
+
+
+/* ---------------------------------------------SouldDo------------------------------------------------- */
+.shouldDo__taskBox {
+    margin: 28px;
+    padding: 0px 40px;
+}
+.shouldDo__taskBox ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.shouldDo__taskBox li {
+    display: inline-block;
+    margin-bottom: 20px;
+    min-width: 200px;
+    position: relative;
+}
+
+
+
+
+.shouldDo__list .li::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #1A223F;
+
+    position: absolute;
+    left: -24px;
+    top: 7px;
+}
+
+.shouldDo__list .li:hover::before {
+    background-image: url('./img/cekedIcon.png');
+    background-size: cover;
+    cursor: pointer;
+    color: #101116;
+}
+.shouldDo__list .li:hover {
+    cursor: pointer;
+    font-weight: 500;
+    color: #101116;
+}
+
+.shouldDo__list .li:active::before {
+    opacity: 0.7;
+}
+.shouldDo__list .li:active {
+    opacity: 0.7;
+}
+
+
+
+
+/* ---------------------------------------------HaveDone------------------------------------------------- */
+.haveDone__subtitle {
+    opacity: 0.7;
+}
+/* .haveDone__taskBox {
+    opacity: 0.5;
+} */
+
+.haveDone__list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 28px 16px;
+    padding-left: 20px;
+}
+
+.haveDone__list li {
+    display: inline-block;
     margin-bottom: 10px;
+    min-width: 160px;
+    position: relative;
+    text-align: center;
+
+    opacity: 0.4;
+}
+
+.haveDone__list li::before {
+    content: '';
+    display: inline-block;
+    width: 70%;
+    height: 1px;
+    background-color: #1A223F;
+    position: absolute;
+    top: 15px;
+    left: 24px;
+}
+
+.haveDone__list li:hover::before {
+    background-color: #bb0000;
+}
+
+.haveDone__list li:hover {
+    cursor: default;
+    opacity: 0.8;
+    color: rgb(134, 50, 50);
+    cursor: pointer;
+}
+
+.haveDone__list li::after {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+
+    position: relative;
+    bottom: 8px;
+}
+
+.haveDone__list li:hover::after {
+    background-image: url(./img/Remove.png);
+    background-size: cover;    
 }
