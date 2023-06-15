@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
 
-
 body {
     background-color: #1A223F;
     color: #1A223F;
@@ -127,7 +126,6 @@ body {
 /* ---------------------------------------------SouldDo------------------------------------------------- */
 .shouldDo__taskBox {
     margin: 28px;
-    padding: 0px 40px;
 }
 .shouldDo__taskBox ul {
     display: flex;
@@ -139,6 +137,7 @@ body {
     margin-bottom: 20px;
     min-width: 200px;
     position: relative;
+    padding: 0 40px;
 }
 
 
@@ -152,7 +151,7 @@ body {
     border: 1px solid #1A223F;
 
     position: absolute;
-    left: -24px;
+    left: 14px;
     top: 7px;
 }
 
@@ -191,7 +190,7 @@ body {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 28px 16px;
+    margin: 0 16px;
     padding-left: 20px;
 }
 
@@ -201,6 +200,7 @@ body {
     min-width: 160px;
     position: relative;
     text-align: center;
+    padding: 0 40px;
 
     opacity: 0.4;
 }
