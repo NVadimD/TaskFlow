@@ -1,0 +1,101 @@
+@media (width >= 2200px) {
+
+    .container {
+        max-width: 1920px;
+    }
+
+    .header {
+        min-height: 128px;
+    }
+
+    .main {
+        min-height: calc(100vh - 128px);
+    }
+
+
+
+
+    body {
+        font-size: 1.6em;
+    }
+    
+    .masterTitle {
+        font-size: 60px;
+    }
+
+    .subtitle {
+        font-size: 48px;
+    }
+
+    .newTask__subtitle {
+        font-size: 30px;
+    }
+
+    .textInput {
+        font-size: 20px;
+        margin-bottom: 42px;
+        margin-top: 16px;
+    }
+
+
+
+    .shouldDo__taskBox {
+        margin: 54px;
+    }
+}
+
+@media (width <= 926px) {
+    .shouldDo__taskBox ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .haveDone__list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 20px;
+        margin: 0;
+    }
+}
+
+@media (width <= 768px) {
+    .block_shouldDo {
+        width: 58%;
+    }
+    .block_haveDone{
+        width: 42%;
+    }
+    
+
+
+    .addTaskDesk {
+        min-height: 16%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto 0;
+    }
+    .newTask__subtitle {
+        padding: 0 24px 10px;
+        margin-top: 18px;
+    }
+    .textInput {
+        width: 90%;
+        margin-bottom: 18px;
+    }
+    .btn {
+        width: 100px;
+        margin-left: 20px;
+        margin-bottom: 16px;
+    }
+
+
+
+    .haveDone__subtitle {
+        font-size: 30px;
+        padding: 0 20px;
+        margin-bottom: 12px;
+    }
+}
+
+/* Теперь надо сделать меньше 576!! */

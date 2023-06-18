@@ -131,6 +131,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .shouldDo__taskBox li {
     display: inline-block;
