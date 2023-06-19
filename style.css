@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-    min-height: 100px;
+    min-height: 116px;
     background-color: #A3B4C6;
 
     display: flex;
@@ -27,17 +27,18 @@ body {
     font-weight: 700;
 }
 
-
+.nav {
+    display: none;
+}
 
 
 
 
 .main {
     min-height: calc(100vh - 100px);
-    width: 100%;
-
     display: flex;
 }
+
 .subtitle {
     text-align: center;
     font-size: 32px;

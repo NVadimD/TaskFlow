@@ -118,3 +118,20 @@ haveDoneList.addEventListener('click', function(event) {
 
 
 
+
+
+
+
+// --------------------------------------Настройка навигации для мобилки---------------------------------------
+
+const list = document.querySelector('.list');
+const listItems = Array.from(list.querySelectorAll('li'));
+
+list.addEventListener('click', function(event) {
+    if (event.target.nodeName !== 'LI') {
+        return false;
+    } else if (!event.target.classList.contains('active') && event.target.nodeName === 'LI') {
+        listItems.forEach(item => item.classList.remove('active'));
+        event.target.classList.add('active');
+    }
+})

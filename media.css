@@ -98,4 +98,53 @@
     }
 }
 
-/* Теперь надо сделать меньше 576!! */
+@media (width <= 576px) {
+    .main {
+        flex-direction: column;
+
+        margin-top: 116px;
+        width: 100%;
+    }
+
+    .block_shouldDo {
+        width: 100%;
+    }
+
+    .block_haveDone{
+        width: 100%;
+    }
+
+
+
+    .header {
+        flex-direction: column;
+
+        position: fixed;
+        top: 0;
+        width: 100%;
+    
+        z-index: 10;
+    }
+
+    .nav {
+        display: block;
+        width: 100%;
+    }
+
+    .list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .list li {
+        padding: 8px 20px;
+        font-size: 14px;
+        opacity: 0.4;
+    }
+
+
+    li.active {
+        opacity: 1;
+        font-weight: 700;
+    }
+}
+
