@@ -127,11 +127,28 @@ haveDoneList.addEventListener('click', function(event) {
 const list = document.querySelector('.list');
 const listItems = Array.from(list.querySelectorAll('li'));
 
+
 list.addEventListener('click', function(event) {
     if (event.target.nodeName !== 'LI') {
         return false;
     } else if (!event.target.classList.contains('active') && event.target.nodeName === 'LI') {
         listItems.forEach(item => item.classList.remove('active'));
-        event.target.classList.add('active');
+        event.target.classList.add('active');   
+        changeList()   
     }
 })
+
+function changeList() {
+    const activeItem = listItems.find(item => item.classList.contains('active'));
+    if (activeItem.textContent === 'What I should do?') {
+        window.scroll({
+            top: shouldDoList.offsetTop - 300,
+            behavior: 'smooth'
+        })
+    } else {
+        window.scroll({
+            top: haveDoneList.offsetTop - 200,
+            behavior: 'smooth'
+        })
+    }
+}
