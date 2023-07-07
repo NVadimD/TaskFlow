@@ -167,6 +167,7 @@ body {
     cursor: pointer;
     font-weight: 500;
     color: #101116;
+    padding-right: 4px;
 }
 
 .shouldDo__list li:active::before {
@@ -183,40 +184,31 @@ body {
 .haveDone__subtitle {
     opacity: 0.7;
 }
-/* .haveDone__taskBox {
-    opacity: 0.5;
-} */
+
 
 .haveDone__list {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 16px;
+    margin: 26px 16px 0;
     padding-left: 20px;
 }
 
 .haveDone__list li {
     display: inline-block;
-    margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 14px;
+    line-height: 0.8;
     min-width: 160px;
     position: relative;
     text-align: center;
-    padding: 0 40px;
+    padding: 0 8px;
+    text-decoration: line-through;
 
     opacity: 0.4;
 }
 
-.haveDone__list li::before {
-    content: '';
-    display: inline-block;
-    width: 70%;
-    height: 1px;
-    background-color: #1A223F;
-    position: absolute;
-    top: 15px;
-    left: 24px;
-}
 
 .haveDone__list li:hover::before {
     background-color: #bb0000;
@@ -227,6 +219,7 @@ body {
     opacity: 0.8;
     color: rgb(134, 50, 50);
     cursor: pointer;
+    overflow: hidden;
 }
 
 .haveDone__list li::after {
@@ -236,7 +229,7 @@ body {
     height: 20px;
 
     position: relative;
-    bottom: 8px;
+    top: 0px;
 }
 
 .haveDone__list li:hover::after {
